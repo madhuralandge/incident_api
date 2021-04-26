@@ -1,23 +1,23 @@
-Download the repository to your local machine.
-Set repository to localhost.
-Run php artisan migrate
+<p>Download the repository to your local machine.</p>
+<p>Set repository to localhost.</p>
+<p>Run php artisan migrate</p>
 
-Following are the api lists.
-API        : Get incidents 
-URL        : http://localhost/incident_api/public/api/v1/incident
-Method     : GET
-Returns    : status, message, incidents
-Status     : 1 - Sucess
+<p>Following are the api lists.</p>
+<p>API        : Get incidents </p>
+<p>URL        : http://localhost/incident_api/public/api/v1/incident</p>
+<p>Method     : GET</p>
+<p>Returns    : status, message, incidents</p>
+<p>Status     : 1 - Sucess</p>
 
 
-API        : Stor incidents 
-URL        : http://localhost/incident_api/public/api/v1/incident
-Method     : Post
-Parameters : title, location, category, people, comments, incident_date
-Returns    : status, message, incident
-Status     : 0 - Empty fileds, 1 - Sucess
-Note       :  1. location will be json string like {"latitude": 12.9231501, "longitude": 74.7818517}
-              2. people will be json string like [{"name": "Name of person 1", "type": "staff"},{"name": "Name of person 2 ","type": "witness" },{"name": "Name of person 3", "type": "staff"}]
+<p>API        : Stor incidents </p>
+<p>URL        : http://localhost/incident_api/public/api/v1/incident</p>
+<p>Method     : Post</p>
+<p>Parameters : title, location, category, people, comments, incident_date</p>
+<p>Returns    : status, message, incident</p>
+<p>Status     : 0 - Empty fileds, 1 - Sucess</p>
+<p>Note       :  1. location will be json string like {"latitude": 12.9231501, "longitude": 74.7818517}
+              2. people will be json string like [{"name": "Name of person 1", "type": "staff"},{"name": "Name of person 2 ","type": "witness" },{"name": "Name of person 3", "type": "staff"}]</p>
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
