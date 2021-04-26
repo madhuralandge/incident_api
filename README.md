@@ -1,3 +1,25 @@
+Download the repository to your local machine.
+Set repository to localhost.
+Run php artisan migrate
+
+Following are the api lists.
+API        : Get incidents 
+URL        : http://localhost/incident_api/public/api/v1/incident
+Method     : GET
+Returns    : status, message, incidents
+Status     : 1 - Sucess
+
+
+API        : Stor incidents 
+URL        : http://localhost/incident_api/public/api/v1/incident
+Method     : Post
+Parameters : title, location, category, people, comments, incident_date
+Returns    : status, message, incident
+Status     : 0 - Empty fileds, 1 - Sucess
+Note       :  1. location will be json string like {"latitude": 12.9231501, "longitude": 74.7818517}
+              2. people will be json string like [{"name": "Name of person 1", "type": "staff"},{"name": "Name of person 2 ","type": "witness" },{"name": "Name of person 3", "type": "staff"}]
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
@@ -59,3 +81,6 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
