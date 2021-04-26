@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateIncidentPeopleInvolvedTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('incident_people_involved', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('incident_id')->nullable(); 
+            $table->unsignedBigInteger('peolple_id')->nullable(); 
+            $table->timestamps();
+
+            $table->foreign('incident_id')->references('id')->on('incidents');
+            $table->foreign('peolple_id')->references('id')->on('people');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('incident_people_involved');
+    }
+}
